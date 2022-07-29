@@ -20,7 +20,7 @@ const priceFormatHandler = test.each(PRICE_FORMAT_TEST_DATA);
 priceFormatHandler('test price format %s', ({ value, expected }) => {
   const actual = priceFormat(value);
 
-  expect(actual).toEqual(expected);
+  expected(actual).toEqual(expected);
 });
 
 const TITLE_VALIDATE_TEST_DATA = [
@@ -28,14 +28,14 @@ const TITLE_VALIDATE_TEST_DATA = [
     value: '',
     expected: {
       isValid: false,
-      errorMessage: 'Пустое имя товара',
+      errorMessage: 'Не заполнено поле Название',
     },
   },
   {
     value: ' ',
     expected: {
       isValid: false,
-      errorMessage: 'Пустое имя товара',
+      errorMessage: 'Не заполнено поле Название',
     },
   },
   {
@@ -81,7 +81,7 @@ const PRICE_VALIDATE_TEST_DATA = [
     value: '1cgfsd23',
     expected: {
       isValid: false,
-      errorMessage: 'Некорректная стоимость',
+      errorMessage: 'Поле заполнено не корректно',
     },
   },
   {
