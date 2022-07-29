@@ -8,7 +8,6 @@
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint .",
     "test": "jest --testPathPattern=./src/",
-    "e2e": "jest --testPathPattern=./e2e/ --runInBand",
     "coverage": "jest --testPathPattern=./src/ --coverage"
   },
   "jest": {
