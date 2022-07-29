@@ -19,8 +19,6 @@ const priceFormatHandler = test.each(PRICE_FORMAT_TEST_DATA);
 
 priceFormatHandler('test price format %s', ({ value, expected }) => {
   const actual = priceFormat(value);
-
-
 });
 
 const TITLE_VALIDATE_TEST_DATA = [
@@ -51,8 +49,6 @@ const titleValidateHandler = test.each(TITLE_VALIDATE_TEST_DATA);
 
 titleValidateHandler('test title validate %s', ({ value, expected }) => {
   const actual = titleValidate(value);
-
-
 });
 
 const PRICE_VALIDATE_TEST_DATA = [
@@ -104,6 +100,4 @@ const priceValidateHandler = test.each(PRICE_VALIDATE_TEST_DATA);
 
 priceValidateHandler('test price validate %s', ({ value, expected }) => {
   const actual = priceValidate(value);
-
-  
 });
