@@ -40,19 +40,11 @@ export default class CRUDModal {
     );
 
     this.submitButton = document.createElement('button');
-    this.submitButton.classList.add(
-      'btn',
-      'btn-outline-success',
-      'mx-4'
-    );
-    this.submitButton.textContent = 'Сохранить'
+    this.submitButton.classList.add('btn', 'btn-outline-success', 'mx-4');
+    this.submitButton.textContent = 'Сохранить';
 
     this.cancelButton = document.createElement('button');
-    this.cancelButton.classList.add(
-      'btn',
-      'btn-outline-warning',
-      'mx-4'
-    );
+    this.cancelButton.classList.add('btn', 'btn-outline-warning', 'mx-4');
     this.cancelButton.textContent = 'Отмена';
 
     buttonsBlock.insertAdjacentElement('beforeEnd', this.submitButton);

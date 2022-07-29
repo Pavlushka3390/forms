@@ -1,5 +1,4 @@
 export default class Popover {
-
   static parents = new WeakSet();
 
   constructor(title, text, parentElement) {

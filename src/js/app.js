@@ -10,14 +10,7 @@ const field = document.querySelector('.field');
 
 function createControlButton(text, uniqueClass, callback) {
   const btn = document.createElement('button');
-  btn.classList.add(
-    'btn',
-    'bg-info',
-    'text-white',
-    'm-2',
-    'p-2',
-    uniqueClass
-  );
+  btn.classList.add('btn', 'bg-info', 'text-white', 'm-2', 'p-2', uniqueClass);
   btn.textContent = text;
 
   btn.addEventListener('click', (event) => {
@@ -38,7 +31,10 @@ createControlButton('Popovers', 'popover-start-button', () => {
 
   const btn = not$(btnEl);
   btn.addEventListener('click', () => {
-    btn.popover('Popover title', 'And heres some amazing content. Its very engaging. Right?');
+    btn.popover(
+      'Popover title',
+      'And heres some amazing content. Its very engaging. Right?'
+    );
   });
 });
 
